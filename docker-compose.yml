@@ -1,0 +1,12 @@
+---
+version: '3.8'
+services:
+ pmtfrontend:
+  image: pmt_frontend1
+  ports:
+   - 3000:3000
+  container_name: pmt_frontend
+  deploy:
+    replicas: 1
+  restart: always
+...
